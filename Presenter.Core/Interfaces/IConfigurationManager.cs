@@ -9,7 +9,6 @@ namespace Presenter.Core.Interfaces
 {
     public interface IConfigurationManager
     {
-        string DbFilesPath { get; }
-        List<Presentation> Presentations { get; }
+        Configuration Configuration { get; }
     }
 }

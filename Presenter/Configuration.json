@@ -1,7 +1,15 @@
 ﻿{
+    "SlideShowApplicationExecutable": "Presenter.Presentation.exe",
+
     "DbFilesPath": "C:\\Access",
 
-    "Presentations": [
+    "DefaultHtmlTemplatePath": "C:\\a.html",
 
+    "Presentations": [
+        {
+            "FamilyId": 1,
+            "Screen": 1,
+            "HtmlTemplatePath": null
+        }
     ]
 }

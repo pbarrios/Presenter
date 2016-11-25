@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Presenter.Core.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Presenter.Core.Entities
 {
@@ -10,10 +8,12 @@ namespace Presenter.Core.Entities
     {
         public int FamilyId { get; set; }
         public List<Product> Products { get; set; }
+        public int Screen { get; set; }
+        public string HtmlTemplatePath { get; set; }
 
-        public void Start()
+        public void Start(IScreenManager screenManager)
         {
-            throw new NotImplementedException();
+            screenManager.StartPresentation(this);
         }
 
         public void Stop()

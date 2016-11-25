@@ -1,0 +1,8 @@
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe.config
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.pdb
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Form1.resources
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Properties.Resources.resources
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csproj.GenerateResource.Cache
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.exe
+c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.pdb

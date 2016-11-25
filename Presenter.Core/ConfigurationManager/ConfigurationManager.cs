@@ -4,28 +4,20 @@ using Presenter.Core.Entities;
 using Presenter.Core.Interfaces;
 using System.IO;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Presenter.Core.ConfigurationManager
 {
     public class ConfigurationManager : IConfigurationManager
     {
-        private dynamic configuration;
+        private Configuration configuration;
 
         public ConfigurationManager(string jsonPath)
         {
             var jsonString = File.ReadAllText(jsonPath);
-            configuration = JsonConvert.DeserializeObject(jsonString);
+            configuration = JsonConvert.DeserializeObject<Configuration>(jsonString);
         }
 
-
-        public string DbFilesPath => configuration.DbFilesPath;
-
-        public List<Presentation> Presentations 
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public Configuration Configuration => configuration;
     }
 }

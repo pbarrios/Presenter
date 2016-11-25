@@ -14,12 +14,17 @@ namespace Presenter
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
-            {
-                new PresenterService()
-            };
-            ServiceBase.Run(ServicesToRun);
+            //ServiceBase[] ServicesToRun;
+            //ServicesToRun = new ServiceBase[]
+            //{
+            //    new PresenterService()
+            //};
+            //ServiceBase.Run(ServicesToRun);
+
+            var p = new PresenterService();
+            p.TEST();
+
+
         }
     }
 }

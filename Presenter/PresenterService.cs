@@ -21,6 +21,12 @@ namespace Presenter
             InitializeComponent();
         }
 
+
+        public void TEST()
+        {
+            this.OnStart(null);
+        }
+
         protected override void OnStart(string[] args)
         {
             // TODO: INJECT Managers with IoC framework?

@@ -64,6 +64,10 @@
       <Project>{42f8a1e0-0c58-4b6b-96cb-e5a73339a6ac}</Project>
       <Name>Presenter.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Presenter.Presentation\Presenter.Presentation.csproj">
+      <Project>{b578e198-af52-4899-82db-03f1353804dc}</Project>
+      <Name>Presenter.Presentation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
