@@ -1,0 +1,11 @@
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Presenter.exe.config
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Configuration.json
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Presenter.exe
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Presenter.pdb
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Presenter.Core.dll
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Newtonsoft.Json.dll
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Presenter.Core.pdb
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\bin\Debug\Newtonsoft.Json.xml
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\obj\Debug\Presenter.exe
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter\obj\Debug\Presenter.pdb

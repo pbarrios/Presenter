@@ -1,0 +1,7 @@
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\bin\Debug\Presenter.Core.dll
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\bin\Debug\Presenter.Core.pdb
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\bin\Debug\Newtonsoft.Json.dll
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\bin\Debug\Newtonsoft.Json.xml
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\obj\Debug\Presenter.Core.csprojResolveAssemblyReference.cache
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\obj\Debug\Presenter.Core.dll
+c:\users\pbarrios\documents\visual studio 2015\Projects\Presenter\Presenter.Core\obj\Debug\Presenter.Core.pdb
