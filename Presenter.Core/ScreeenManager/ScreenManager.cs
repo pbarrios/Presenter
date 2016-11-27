@@ -2,9 +2,6 @@
 using Presenter.Core.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -41,29 +38,31 @@ namespace Presenter.Core.ScreeenManager
 
         public Process StartPresentation(Presentation presentation)
         {
-            var process = new Process();
-            Rectangle screen;
-            process.StartInfo.FileName = _slideShowApplicationExecutable;
-            process.StartInfo.Arguments = BuildPresentationFiles(presentation);
-            process.Start();
-                
-            // Get the handle for window this is neccesary for get the handle
-            process.WaitForInputIdle();
-            //Thread.Sleep(100);               
 
             if (Screen.AllScreens.Length < presentation.Screen)
                 throw new ArgumentException($"The screen {presentation.Screen} doesn't exist");
 
             if (presentation.Screen >= 1)
             {
-                screen = Screen.AllScreens[presentation.Screen - 1].WorkingArea;
+                var process = new Process();
+                process.StartInfo.FileName = _slideShowApplicationExecutable;
+                process.StartInfo.Arguments = BuildPresentationFiles(presentation);
+                process.Start();
+                var screen = Screen.AllScreens[presentation.Screen - 1].WorkingArea.Location;
                 //change the window to the second monitor
-                SetWindowPos(process.MainWindowHandle, 0,
-                screen.Left, screen.Top, screen.Width,
-                screen.Height, 0);
-            }
+                //SetWindowPos(process.MainWindowHandle, 0,
+                //screen.Left, screen.Top, screen.Width,
+                //screen.Height, 0);
 
-            return process;
+                process.Start();
+              
+                // Get the handle for window this is neccesary for get the handle
+                process.WaitForInputIdle();                
+                //Thread.Sleep(100);               
+
+                // return process;
+            }
+            return null;
         }
 
         private string BuildPresentationFiles(Presentation presentation)
