@@ -25,8 +25,11 @@ namespace Presenter.ControlPanel
         public MainWindow()
         {
             InitializeComponent();
-            var screenManager = new ScreenManager(new ConfigurationManager("Configuration.json"));
-            screenManager.Run();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ScreenManager.Instance.KillAllPresentations();
         }
     }
 }
