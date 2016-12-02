@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 
 namespace Presenter.Core.ScreeenManager
 {
@@ -12,10 +13,9 @@ namespace Presenter.Core.ScreeenManager
         private string _slideShowApplicationExecutable;
         private string _defaultHtmlTemplatePath;
         private string _presentationsDirectory;
-        private int _maxPresentations;
         public Dictionary<int, Process> Presentations;
-        private static ScreenManager _instance;
 
+        private static ScreenManager _instance;
         public static ScreenManager Instance
         {
             get
@@ -30,29 +30,42 @@ namespace Presenter.Core.ScreeenManager
 
         private ScreenManager(IConfigurationManager configurationManager)
         {
+            var currentDirectory = Directory.GetCurrentDirectory().Replace("\\", "/");
+
             _slideShowApplicationExecutable = configurationManager.Configuration.SlideShowApplicationExecutable;
-            _defaultHtmlTemplatePath = configurationManager.Configuration.DefaultHtmlTemplatePath;
-            _maxPresentations = configurationManager.Configuration.Presentations;
-            _presentationsDirectory = configurationManager.Configuration.PresentationsDirectory;
+            _defaultHtmlTemplatePath = $"{currentDirectory}/{configurationManager.Configuration.DefaultHtmlTemplatePath}";
+            _presentationsDirectory = $"{currentDirectory}/{configurationManager.Configuration.PresentationsDirectory}";
         }
 
         public void KillAllPresentations()
         {
             foreach (var process in Presentations.Keys)
+            {
                 KillPresentation(process);
+            }
         }
 
         public void KillPresentation(int i)
         {
-            if(Presentations[i]!= null && !Presentations[i].HasExited)
-            Presentations[i].Kill();
+            if (Presentations[i] != null && !Presentations[i].HasExited)
+            {
+                Presentations[i].Kill();
+            }
         }
 
         public void Run()
         {
             if (Presentations == null) Presentations = new Dictionary<int, Process>();
-            for (int i = 1; i <= _maxPresentations; i++)
-                Presentations.Add(i, StartPresentation(i));
+
+            int outScreen;
+            var presentations = Directory.GetDirectories(_presentationsDirectory)
+                .Where(d => int.TryParse(d.Substring(d.LastIndexOf("\\") + 1),out outScreen))
+                .Select(d => int.Parse(d.Substring(d.LastIndexOf("\\") + 1)));
+
+            foreach(var presentation in presentations)
+            {
+                Presentations.Add(presentation, StartPresentation(presentation));
+            }
         }
 
         public Process StartPresentation(int presentation)
@@ -79,15 +92,10 @@ namespace Presenter.Core.ScreeenManager
                 file.Delete();
             }
 
-            var currentDirectory = Directory.GetCurrentDirectory().Replace("\\", "/");
+            var backgroundFilePath = $"{_presentationsDirectory}/{presentation}/p.jpg";
 
-            var htmlTemplatePath = $"{currentDirectory}/{_defaultHtmlTemplatePath}";//Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), _defaultHtmlTemplatePath);
-
-            var htmlTemplate = File.ReadAllText(htmlTemplatePath);
-
-            var backgroundFilePath = $"{currentDirectory}/{_presentationsDirectory}/{presentation}/p.jpg";
-
-            htmlTemplate = htmlTemplate.Replace("{presentation}", $"file:///{backgroundFilePath}");
+            // TODO: instead of use a HTML file, use a zip with CSS, JS and other resources
+            var htmlTemplate = File.ReadAllText(_defaultHtmlTemplatePath).Replace("{presentation}", $"file:///{backgroundFilePath}");
 
             // TODO: Add extra logic: HTML Wrappers/ javascript logic
             var filePath = Path.Combine(presentationDataDirectory, "presentation.html");

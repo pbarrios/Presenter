@@ -23,15 +23,13 @@ B:\mar\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes
 B:\mar\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\navidad\2\p.jpg
 B:\mar\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\pascuas\2\p.jpg
 B:\mar\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\pascuas\1\p.jpg
-C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Presenter.ControlPanel.exe.config
-C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.exe
-C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.pdb
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\navidad\1\p.jpg
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Resources\template.html
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\navidad\2\p.jpg
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\pascuas\2\p.jpg
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Resources\Presentations\themes\pascuas\1\p.jpg
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Configuration.json
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Presenter.ControlPanel.exe.config
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Presenter.ControlPanel.exe
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Presenter.ControlPanel.pdb
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\bin\Debug\Newtonsoft.Json.dll
@@ -48,3 +46,5 @@ C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\M
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.g.resources
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.Properties.Resources.resources
 C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.csproj.GenerateResource.Cache
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.exe
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.ControlPanel\obj\Debug\Presenter.ControlPanel.pdb

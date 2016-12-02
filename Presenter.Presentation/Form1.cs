@@ -20,6 +20,8 @@ namespace Presenter.Presentation
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
+            if (_screenNumber > Screen.AllScreens.Length) Close();
+
             var screen = Screen.AllScreens[_screenNumber - 1];
             this.Location = screen.WorkingArea.Location;
 
