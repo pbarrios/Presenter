@@ -31,7 +31,6 @@ namespace Presenter.Presentation
             Width = screen.WorkingArea.Width;
 
             this.webBrowser1.Navigate(_htmlFilePath);
-
         }
 
     }
