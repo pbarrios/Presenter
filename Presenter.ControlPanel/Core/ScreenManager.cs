@@ -59,8 +59,9 @@ namespace Presenter.Core.ScreeenManager
 
             int outScreen;
             var presentations = Directory.GetDirectories(_presentationsDirectory)
-                .Where(d => int.TryParse(d.Substring(d.LastIndexOf("\\") + 1),out outScreen))
-                .Select(d => int.Parse(d.Substring(d.LastIndexOf("\\") + 1)));
+                .Select((d => d.Substring(d.LastIndexOf("\\") + 1)))
+                .Where(d => int.TryParse(d,out outScreen))
+                .Select(d => int.Parse(d));
 
             foreach(var presentation in presentations)
             {
@@ -79,18 +80,7 @@ namespace Presenter.Core.ScreeenManager
 
         private string BuildPresentationFiles(int presentation)
         {
-            var presentationDataDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Presenter", "Presentations", $"{presentation}");
-            if (!Directory.Exists(presentationDataDirectory))
-            {
-                Directory.CreateDirectory(presentationDataDirectory);
-            }
-
-            var di = new DirectoryInfo(presentationDataDirectory);
-
-            foreach (FileInfo file in di.GetFiles())
-            {
-                file.Delete();
-            }
+            var presentationDataDirectory = PrepareAndGetPresentationDataDirectory(presentation);
 
             var backgroundFilePath = $"{_presentationsDirectory}/{presentation}/p.jpg";
 
@@ -106,6 +96,25 @@ namespace Presenter.Core.ScreeenManager
             }
 
             return filePath;
+        }
+
+        private string PrepareAndGetPresentationDataDirectory(int presentation)
+        {
+            var presentationDataDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Presenter", "Presentations", $"{presentation}");
+
+            if (!Directory.Exists(presentationDataDirectory))
+            {
+                Directory.CreateDirectory(presentationDataDirectory);
+            }
+
+            var di = new DirectoryInfo(presentationDataDirectory);
+
+            foreach (FileInfo file in di.GetFiles())
+            {
+                file.Delete();
+            }
+
+            return presentationDataDirectory;
         }
 
     }
