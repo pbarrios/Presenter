@@ -44,6 +44,7 @@ namespace Presenter.Core.ScreeenManager
 
         public void KillPresentation(int i)
         {
+            if(Presentations[i]!= null && !Presentations[i].HasExited)
             Presentations[i].Kill();
         }
 
@@ -78,11 +79,13 @@ namespace Presenter.Core.ScreeenManager
                 file.Delete();
             }
 
-            var htmlTemplatePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), _defaultHtmlTemplatePath);
+            var currentDirectory = Directory.GetCurrentDirectory().Replace("\\", "/");
+
+            var htmlTemplatePath = $"{currentDirectory}/{_defaultHtmlTemplatePath}";//Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), _defaultHtmlTemplatePath);
 
             var htmlTemplate = File.ReadAllText(htmlTemplatePath);
 
-            var backgroundFilePath = $"{Directory.GetCurrentDirectory().Replace("\\", "/")}/{_presentationsDirectory}/{presentation}/p.jpg";
+            var backgroundFilePath = $"{currentDirectory}/{_presentationsDirectory}/{presentation}/p.jpg";
 
             htmlTemplate = htmlTemplate.Replace("{presentation}", $"file:///{backgroundFilePath}");
 

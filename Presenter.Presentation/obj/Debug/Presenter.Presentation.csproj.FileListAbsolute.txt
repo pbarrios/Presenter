@@ -15,3 +15,12 @@ B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Propert
 B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csproj.GenerateResource.Cache
 B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.exe
 B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.pdb
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe.config
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.pdb
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csprojResolveAssemblyReference.cache
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Form1.resources
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Properties.Resources.resources
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csproj.GenerateResource.Cache
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.exe
+C:\Users\pbarrios\Desktop\presenter\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.pdb
