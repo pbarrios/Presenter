@@ -1,0 +1,9 @@
+﻿{
+    "SlideShowApplicationExecutable": "Presenter.Presentation.exe",
+
+    "DefaultHtmlTemplatePath": "Resources/template.html",
+
+    "PresentationsDirectory": "Resources/Presentations/themes/pascuas",
+
+    "Presentations": 2
+}

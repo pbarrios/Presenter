@@ -3,13 +3,5 @@
 
     "DbFilesPath": "C:\\Access",
 
-    "DefaultHtmlTemplatePath": "C:\\a.html",
-
-    "Presentations": [
-        {
-            "FamilyId": 1,
-            "Screen": 1,
-            "HtmlTemplatePath": null
-        }
-    ]
+    "Presentations": 2
 }

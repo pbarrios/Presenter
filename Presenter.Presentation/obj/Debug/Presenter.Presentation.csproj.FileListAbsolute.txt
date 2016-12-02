@@ -6,3 +6,12 @@ c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Pres
 c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csproj.GenerateResource.Cache
 c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.exe
 c:\Users\pbarrios\Documents\Visual Studio 2015\Projects\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.pdb
+B:\mar\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe.config
+B:\mar\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.exe
+B:\mar\Presenter\Presenter.Presentation\bin\Debug\Presenter.Presentation.pdb
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csprojResolveAssemblyReference.cache
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Form1.resources
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.Properties.Resources.resources
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.csproj.GenerateResource.Cache
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.exe
+B:\mar\Presenter\Presenter.Presentation\obj\Debug\Presenter.Presentation.pdb

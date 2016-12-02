@@ -15,9 +15,10 @@ namespace Presenter.Presentation
         static void Main()
         {
             var htmlFile = Environment.GetCommandLineArgs()[1];
+            var screenNumber = int.Parse(Environment.GetCommandLineArgs()[2]);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(htmlFile));
+            Application.Run(new Form1(htmlFile, screenNumber));
         }
     }
 }
