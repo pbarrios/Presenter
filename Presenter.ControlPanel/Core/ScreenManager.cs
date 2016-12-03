@@ -74,7 +74,14 @@ namespace Presenter.Core.ScreeenManager
             var process = new Process();
             process.StartInfo.FileName = _slideShowApplicationExecutable;
             process.StartInfo.Arguments = $"{BuildPresentationFiles(presentation)} {presentation}";
-            process.Start();
+             try
+            {
+                process.Start();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
             return process;
         }
 
