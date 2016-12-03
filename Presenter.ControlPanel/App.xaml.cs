@@ -24,9 +24,17 @@ namespace Presenter.ControlPanel
 
         private void Application_Exit(object sender, ExitEventArgs e)
         {
-            if (ScreenManager.Instance.Presentations == null) return;
+             if (ScreenManager.Instance.Presentations.First().Value == null)
+            {
+                return;
+            }
             foreach (var process in ScreenManager.Instance.Presentations.Values)
-                if(!process.HasExited) process.Kill();
+            {
+                if(!process.HasExited) 
+                {
+                  process.Kill();
+                }
+            }
         }
      
     }
